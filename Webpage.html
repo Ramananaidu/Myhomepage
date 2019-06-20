@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+<p>
+<h1 align="center"> Welcome to Dia Gallary</h1>
+</p>
+<div class="row">
+  <div class="column">
+    <img src="E:\Kartheek Naidu\DSC_0003.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="E:\Kartheek Naidu\DSC_0004.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="E:\Kartheek Naidu\DSC_0005.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+<h2>
+<marquee behavior=scroll direction="left" scrollamount="15">You are watching Dia Gallary</marquee>
+</h2>
+
+</body>
+</html>
