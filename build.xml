@@ -1,0 +1,19 @@
+<target name="SeleniumCITest">
+    <mkdir dir="${junit.output.dir}"/>
+    <junit fork="yes" printsummary="withOutAndErr">
+        <formatter type="xml"/>
+        <test name="com.ontestautomation.selenium.ci.SeleniumCITest" todir="${junit.output.dir}"/>
+        <classpath refid="seleniumCI.classpath"/>
+        <bootclasspath>
+            <path refid="run.SeleniumCITest (1).bootclasspath"/>
+        </bootclasspath>
+    </junit>
+</target>
+<target name="junitreport">
+    <junitreport todir="${junit.output.dir}">
+        <fileset dir="${junit.output.dir}">
+            <include name="TEST-*.xml"/>
+        </fileset>
+        <report format="frames" todir="${junit.output.dir}"/>
+    </junitreport>
+</target>
